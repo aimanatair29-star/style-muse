@@ -792,8 +792,17 @@ footer p {
     }
 
     .result-image {
-        min-height: 400px;
-    }
+    }.result-image {
+    min-height: 600px;
+    background-image: linear-gradient(
+        rgba(50, 35, 25, .04),
+        rgba(50, 35, 25, .04)
+    ),
+    url("https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=1000&q=85");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
     .result-card {
         padding: 28px;
