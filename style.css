@@ -857,3 +857,89 @@ footer p {
         font-size: 10px;
     }
 }
+/* =========================================
+   RESULT FASHION VISUAL
+========================================= */
+
+.result-image {
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+    background: #e8d8ca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fashion-visual {
+    width: 65%;
+    height: 85%;
+    position: relative;
+}
+
+.fashion-head {
+    position: absolute;
+    width: 115px;
+    height: 145px;
+    background: #d8ad91;
+    border-radius: 50% 50% 45% 45%;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fashion-head::before {
+    content: "";
+    position: absolute;
+    width: 135px;
+    height: 155px;
+    background: #4a342c;
+    border-radius: 55% 55% 35% 35%;
+    top: -22px;
+    left: -10px;
+    z-index: -1;
+}
+
+.fashion-body {
+    position: absolute;
+    width: 190px;
+    height: 230px;
+    background: #9b7763;
+    top: 27%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 45px 45px 15px 15px;
+}
+
+.fashion-skirt {
+    position: absolute;
+    width: 330px;
+    height: 250px;
+    background: #f5e8db;
+    top: 52%;
+    left: 50%;
+    transform: translateX(-50%);
+    clip-path: polygon(25% 0, 75% 0, 100% 100%, 0 100%);
+}
+
+.fashion-necklace {
+    position: absolute;
+    width: 55px;
+    height: 45px;
+    border: 3px solid #c49a55;
+    border-top: 0;
+    border-radius: 0 0 50% 50%;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.visual-label {
+    position: absolute;
+    bottom: 25px;
+    left: 28px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    letter-spacing: 4px;
+}
