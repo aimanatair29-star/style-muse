@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Style Muse | AI Fashion Stylist</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <a href="#" class="logo">
+            STYLE <span>Muse</span>
+        </a>
+
+        <button class="nav-create" id="navCreate">
+            CREATE YOUR LOOK
+        </button>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    PERSONAL FASHION STYLIST
+                </p>
+
+                <h1>
+                    Dress
+                    <span>your mood.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Create a look that feels uniquely you.
+                    Choose your style, colours, outfit,
+                    jewelry and beauty details.
+                </p>
+
+                <button class="primary-btn" id="startBtn">
+                    CREATE MY LOOK
+                    <span>→</span>
+                </button>
+
+            </div>
+
+
+            <div class="hero-image-wrapper">
+
+                <div class="hero-image"></div>
+
+                <div class="round-note">
+                    CURATED<br>
+                    FOR YOU
+                </div>
+
+                <div class="image-caption">
+                    STYLE / MUSE
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STYLIST SECTION -->
+        <section class="stylist" id="stylist">
+
+            <div class="stylist-header">
+
+                <p class="eyebrow" id="stepNumber">
+                    STEP 01
+                </p>
+
+                <h2 id="stepTitle">
+                    Choose your style
+                </h2>
+
+                <p id="stepDescription">
+                    What kind of fashion mood are you feeling?
+                </p>
+
+            </div>
+
+
+            <!-- PROGRESS -->
+            <div class="progress">
+
+                <div class="progress-line"></div>
+
+                <div class="progress-item active">
+                    <span>01</span>
+                </div>
+
+                <div class="progress-item">
+                    <span>02</span>
+                </div>
+
+                <div class="progress-item">
+                    <span>03</span>
+                </div>
+
+                <div class="progress-item">
+                    <span>04</span>
+                </div>
+
+                <div class="progress-item">
+                    <span>05</span>
+                </div>
+
+                <div class="progress-item">
+                    <span>06</span>
+                </div>
+
+            </div>
+
+
+            <!-- OPTIONS -->
+            <div class="options" id="options">
+                <!-- JavaScript will create the cards -->
+            </div>
+
+
+            <!-- CONTROLS -->
+            <div class="controls">
+
+                <button class="back-btn" id="backBtn">
+                    ← BACK
+                </button>
+
+                <button class="next-btn" id="nextBtn">
+                    CONTINUE →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESULT SECTION -->
+        <section class="result" id="result">
+
+            <div class="result-heading">
+
+                <p class="eyebrow">
+                    STYLE MUSE · YOUR CURATED LOOK
+                </p>
+
+                <h2>
+                    Your Signature Look
+                </h2>
+
+                <p>
+                    A look created from your choices.
+                </p>
+
+            </div>
+
+
+            <div class="result-grid">
+
+                <div class="result-image"></div>
+
+
+                <div class="result-card">
+
+                    <p class="eyebrow">
+                        YOUR STYLE MUSE EDIT
+                    </p>
+
+                    <h3 id="resultTitle">
+                        The Vintage Muse
+                    </h3>
+
+                    <p class="result-description" id="resultDescription">
+                        Your personalized style recommendation
+                        will appear here.
+                    </p>
+
+
+                    <div class="look-details">
+
+                        <div class="detail">
+                            <span>STYLE</span>
+                            <strong id="resultStyle">—</strong>
+                        </div>
+
+                        <div class="detail">
+                            <span>COLOUR</span>
+                            <strong id="resultColour">—</strong>
+                        </div>
+
+                        <div class="detail">
+                            <span>OUTFIT</span>
+                            <strong id="resultOutfit">—</strong>
+                        </div>
+
+                        <div class="detail">
+                            <span>JEWELRY</span>
+                            <strong id="resultJewelry">—</strong>
+                        </div>
+
+                        <div class="detail">
+                            <span>BEAUTY</span>
+                            <strong id="resultBeauty">—</strong>
+                        </div>
+
+                        <div class="detail">
+                            <span>OCCASION</span>
+                            <strong id="resultOccasion">—</strong>
+                        </div>
+
+                    </div>
+
+
+                    <button class="restart-btn" id="restartBtn">
+                        CREATE ANOTHER LOOK ↗
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            STYLE <span>Muse</span>
+        </div>
+
+        <p>
+            YOUR STYLE, CURATED.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
