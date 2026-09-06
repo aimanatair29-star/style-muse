@@ -470,7 +470,62 @@ backBtn.addEventListener("click", previousStep);
 
 restartBtn.addEventListener("click", restart);
 
+/* =========================================
+   POLLINATIONS AUTHORIZATION
+========================================= */
 
+const pollinationsHash =
+    new URLSearchParams(location.hash.slice(1));
+
+const returnedApiKey =
+    pollinationsHash.get("api_key");
+
+
+if (returnedApiKey) {
+
+    sessionStorage.setItem(
+        "pollinations_api_key",
+        returnedApiKey
+    );
+
+    history.replaceState(
+        null,
+        "",
+        window.location.pathname
+    );
+}
+
+
+const savedSelections =
+    sessionStorage.getItem("style_muse_selections");
+
+const shouldGenerate =
+    sessionStorage.getItem("style_muse_generate");
+
+
+if (savedSelections) {
+
+    selections =
+        JSON.parse(savedSelections);
+
+    sessionStorage.removeItem(
+        "style_muse_selections"
+    );
+}
+
+
+if (shouldGenerate === "true") {
+
+    sessionStorage.removeItem(
+        "style_muse_generate"
+    );
+
+    setTimeout(() => {
+
+        generateLook();
+
+    }, 500);
+}
 /* =========================================
    INITIAL LOAD
 ========================================= */
