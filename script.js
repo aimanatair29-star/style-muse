@@ -317,7 +317,34 @@ function previousStep() {
 /* =========================================
    GENERATE LOOK
 ========================================= */
+async function generateAIImage() {
+    const prompt = `
+Create a realistic fashion look based on:
+Style: ${selections.style}
+Colour: ${selections.colour}
+Outfit: ${selections.outfit}
+Jewellery: ${selections.jewelry}
+Beauty: ${selections.beauty}
+Occasion: ${selections.occasion}
 
+Show a full-body fashion model wearing the complete coordinated look.
+Professional fashion photography, elegant styling, clean background.
+`;
+
+    const response = await fetch("/api/generate", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ prompt })
+    });
+
+    if (!response.ok) {
+        throw new Error("Image generation failed");
+    }
+
+    return await response.blob();
+}
 function generateLook() {
 
     stylist.classList.remove("active");
