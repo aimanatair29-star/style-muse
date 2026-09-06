@@ -2,7 +2,7 @@
    STYLE MUSE
    INTERACTIVE FASHION STYLIST
 ========================================= */
-
+const POLLINATIONS_APP_KEY = "pk_f2SjTadzAQNG0KT4";
 const steps = [
     {
         key: "style",
